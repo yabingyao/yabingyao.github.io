@@ -42,7 +42,7 @@
 	      <div class="panel-heading">
 	    	<strong>发表论文</strong> <div class="pull-right"><a href="https://scholar.google.com.hk/citations?user=NrNIgkUAAAAJ&hl=zh-CN" target="_blank">Google-Scholar</a> | <a href="https://www.researchgate.net/profile/Yabing-Yao" target="_blank">ResearchGate</a> | <a href="https://github.com/yabingyao?tab=repositories" target="_blank">GitHub</a></div>  
 	      </div>
-      	<div class="panel-body">
+      	<div class="panel-body" style="text-align: justify;">
 	    	   <ol>
 	    	     <li v-for="publication in publications"> <span v-html="publication.title"></span> <button type="button" v-if="publication.PDF!=''" class="btn btn-default btn-xs"><a :href="publication.PDF" target='_blank'><span class="glyphicon glyphicon-arrow-down"></span>PDF</a> </button> <button type="button" v-if="publication.code!=null" class="btn btn-default btn-xs"><a :href="publication.code" target='_blank'><span class="glyphicon glyphicon-link"></span>CODE</a> </button></li>
            </ol>
